@@ -40,6 +40,17 @@ class RomanNumeralTests(unittest.TestCase):
     def test_twelve(self):
         self.assertEqual("XII", int_to_roman(12))
 
+    def test_forty(self):
+        self.assertEqual("XL", int_to_roman(40))
+
+    def test_800(self):
+        self.assertEqual("DCCC", int_to_roman(800))
+
+    def test_1995(self):
+        self.assertEqual("MCMXCV", int_to_roman(1995))
+
+    def test_299(self):
+        self.assertEqual("CCXCIX", int_to_roman(299))
 
 if __name__ == '__main__':
     unittest.main()
